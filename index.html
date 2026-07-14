@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gul Zahid // Terminal Portfolio</title>
+<meta name="description" content="Gul Zahid — Full Stack Web Developer & Gen AI Expert. MERN, Supabase, Firebase, React Native. I build web, mobile and AI products solo."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="config.js"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-background-base">
+<div id="theme-reveal"></div>
+<!-- Top Navigation -->
+<nav class="docked full-width top-0 border-b border-border-scanline bg-background-base flat no shadows transition-all duration-150 ease-in-out z-40 sticky">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="font-display-lg text-display-lg text-primary uppercase tracking-tighter text-2xl">
+                GUL_ZAHID_OS
+            </div>
+<div class="hidden md:flex gap-6 font-command-line text-command-line text-sm">
+<a class="text-primary font-bold before:content-['_'] hover:text-primary-fixed-dim hover:underline underline-offset-4 transition-all" href="#whoami">&gt; whoami</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim hover:underline underline-offset-4 transition-all" href="#stack">&gt; stack</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim hover:underline underline-offset-4 transition-all" href="#projects">&gt; projects</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim hover:underline underline-offset-4 transition-all" href="#contact">&gt; contact</a>
+</div>
+<div class="flex gap-4">
+<button id="back-to-top" title="Back to top" aria-label="Back to top" class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors bg-transparent border-none p-0 leading-none" style="font-variation-settings: 'FILL' 0;">arrow_upward</button>
+<button id="theme-toggle" title="Toggle light / dark mode" aria-label="Toggle theme" class="text-on-surface-variant hover:text-primary cursor-pointer transition-colors bg-transparent border-none p-0 leading-none">
+<span class="material-symbols-outlined theme-dark-ic">dark_mode</span><span class="material-symbols-outlined theme-light-ic">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-desktop py-12 md:py-20 flex flex-col gap-16 md:gap-24 relative z-20">
+<!-- Section 1: HERO -->
+<section class="w-full" id="whoami">
+<div class="terminal-window max-w-3xl mx-auto">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot" style="border-color: var(--c-outline-variant); background-color: var(--c-surface-highest);"></div>
+<div class="window-dot" style="border-color: var(--c-outline-variant); background-color: var(--c-surface-highest);"></div>
+<div class="window-dot" style="border-color: var(--c-outline-variant); background-color: var(--c-surface-highest);"></div>
+</div>
+<div class="window-title">gulzahid.dev — zsh</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="mb-6">
+<span class="text-primary">&gt; whoami</span>
+</div>
+<div class="mb-8 text-on-surface leading-relaxed whitespace-pre-line" id="typewriter-text">
+                        Gul Zahid — Full Stack Web Developer &amp; Gen AI Expert.
+                        MERN • Supabase • Firebase • React Native.
+                        I build web, mobile &amp; AI products solo — from DB to deploy.
+                    </div>
+<div class="flex flex-wrap gap-3 mt-6">
+<span class="chip"><span class="dot"></span> Frontend Dev</span>
+<span class="chip"><span class="dot"></span> Backend Dev</span>
+<span class="chip"><span class="dot"></span> Full Stack Dev</span>
+<span class="chip"><span class="dot"></span> Gen AI Expert</span>
+<span class="chip"><span class="dot"></span> Solo Builder</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
+<a class="inline-flex items-center justify-center px-6 py-3 border border-primary bg-primary text-background-base font-command-line text-command-line font-bold hover:bg-primary-container transition-colors rounded" href="#projects">
+                            &gt; view_work
+                        </a>
+<a class="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary font-command-line text-command-line hover-glow transition-all rounded bg-transparent" href="#contact">
+                            &gt; contact_me
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: SKILLS -->
+<section class="w-full" id="stack">
+<div class="font-command-line text-command-line text-primary mb-8 text-xl font-bold reveal">
+                &gt; stack --list
+            </div>
+
+<!-- Role summary -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+<div class="terminal-window reveal">
+<div class="terminal-content font-command-line text-command-line py-5">
+<div class="text-secondary text-xs mb-1">// role_01</div>
+<div class="text-on-surface font-bold">Frontend Dev</div>
+<div class="text-on-surface-variant text-xs mt-1">React, Next.js, Tailwind, ShadcnUI</div>
+</div>
+</div>
+<div class="terminal-window reveal">
+<div class="terminal-content font-command-line text-command-line py-5">
+<div class="text-secondary text-xs mb-1">// role_02</div>
+<div class="text-on-surface font-bold">Backend Dev</div>
+<div class="text-on-surface-variant text-xs mt-1">Node, Express, MongoDB, PostgreSQL</div>
+</div>
+</div>
+<div class="terminal-window reveal">
+<div class="terminal-content font-command-line text-command-line py-5">
+<div class="text-secondary text-xs mb-1">// role_03</div>
+<div class="text-on-surface font-bold">Mobile Dev</div>
+<div class="text-on-surface-variant text-xs mt-1">React Native · Android · iOS</div>
+</div>
+</div>
+<div class="terminal-window reveal">
+<div class="terminal-content font-command-line text-command-line py-5">
+<div class="text-secondary text-xs mb-1">// role_04</div>
+<div class="text-on-surface font-bold">Gen AI / ML</div>
+<div class="text-on-surface-variant text-xs mt-1">AI/ML minor · Gen AI apps</div>
+</div>
+</div>
+</div>
+
+<!-- Detailed stack -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Frontend -->
+<div class="terminal-window reveal">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">frontend.json</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="text-secondary mb-3">const frontend = {</div>
+<div class="pl-4 flex flex-wrap gap-2">
+<span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span><span class="chip">Bootstrap</span><span class="chip">ShadcnUI</span><span class="chip">GSAP</span><span class="chip">Three.js</span>
+</div>
+<div class="text-secondary mt-3">};</div>
+</div>
+</div>
+<!-- Backend -->
+<div class="terminal-window reveal">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">backend.json</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="text-secondary mb-3">const backend = {</div>
+<div class="pl-4 flex flex-wrap gap-2">
+<span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span><span class="chip">PostgreSQL</span><span class="chip">Supabase</span><span class="chip">Firebase</span><span class="chip">MERN Stack</span>
+</div>
+<div class="text-secondary mt-3">};</div>
+</div>
+</div>
+<!-- Mobile -->
+<div class="terminal-window reveal">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">mobile.json</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="text-secondary mb-3">const mobile = {</div>
+<div class="pl-4 flex flex-wrap gap-2">
+<span class="chip">React Native</span><span class="chip">Android</span><span class="chip">iOS</span><span class="chip">Expo</span>
+</div>
+<div class="text-secondary mt-3">};</div>
+</div>
+</div>
+<!-- AI / ML -->
+<div class="terminal-window reveal">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">ai_engine.json</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="text-secondary mb-3">const ai = {</div>
+<div class="pl-4 flex flex-wrap gap-2">
+<span class="chip">Generative AI</span><span class="chip">AI/ML (minor)</span><span class="chip">LLM Apps</span><span class="chip">Prompt Eng.</span>
+</div>
+<div class="text-secondary mt-3">};</div>
+</div>
+</div>
+</div>
+
+<!-- Tooling -->
+<div class="terminal-window reveal mt-6">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">tooling.json</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="text-secondary mb-3">const tooling = {</div>
+<div class="pl-4 flex flex-wrap gap-2">
+<span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">npm</span><span class="chip">VSCode</span><span class="chip">REST APIs</span><span class="chip">Solo Shipping</span>
+</div>
+<div class="text-secondary mt-3">};</div>
+</div>
+</div>
+</section>
+
+<!-- Section 3: PROJECTS -->
+<!-- Fetched live from github.com/AyanZahid-Code (public, non-fork repos) -->
+<section class="w-full" id="projects">
+<div class="font-command-line text-command-line text-primary mb-8 text-xl font-bold reveal">
+                &gt; projects --show
+            </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Real project pulled from github.com/AyanZahid-Code -->
+<a class="terminal-window reveal hover-glow transition-all block" href="https://github.com/AyanZahid-Code/opencode-claude-bridge" target="_blank" rel="noopener">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">opencode-claude-bridge — typescript</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="text-on-surface font-bold mb-1">OpenCode Claude Bridge</div>
+<div class="text-on-surface-variant text-sm mb-3">Use OpenCode AI models inside Claude Code. TypeScript · 2★</div>
+<div class="flex flex-wrap gap-2 text-xs">
+<span class="chip">TypeScript</span><span class="chip">Claude Code</span><span class="chip">OpenCode</span>
+</div>
+<div class="mt-4 text-secondary text-xs">// github.com/AyanZahid-Code/opencode-claude-bridge</div>
+</div>
+</a>
+</div>
+</section>
+
+<!-- Section 4: CONTACT -->
+<section class="w-full" id="contact">
+<div class="terminal-window max-w-3xl mx-auto reveal">
+<div class="terminal-header font-label-md text-label-md">
+<div class="window-controls">
+<div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
+</div>
+<div class="window-title">contact.sh — execute</div>
+</div>
+<div class="terminal-content font-command-line text-command-line">
+<div class="mb-4"><span class="text-primary">&gt; ./connect --with gul</span></div>
+<div class="text-on-surface-variant mb-6">Open to full-stack, Gen AI &amp; mobile work. Let's build something.</div>
+<div class="flex flex-col gap-3">
+<a class="inline-flex items-center gap-2 px-4 py-3 border border-outline rounded hover-glow transition-all text-on-surface" href="mailto:ayanzahid0318@gmail.com">
+<span class="material-symbols-outlined text-secondary" style="font-size:18px;">mail</span> ayanzahid0318@gmail.com
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-3 border border-outline rounded hover-glow transition-all text-on-surface" href="https://x.com/AyanZahidX" target="_blank" rel="noopener">
+<span class="material-symbols-outlined text-secondary" style="font-size:18px;">alternate_email</span> x.com/AyanZahidX
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-3 border border-outline rounded hover-glow transition-all text-on-surface" href="https://github.com/AyanZahid-Code" target="_blank" rel="noopener">
+<span class="material-symbols-outlined text-secondary" style="font-size:18px;">code</span> github.com/AyanZahid-Code
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="docked full-width bottom-0 border-t border-border-scanline bg-background-base flat no shadows z-40 mt-12 relative">
+<div class="w-full flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile font-label-md text-label-md">
+<div class="text-secondary-fixed-dim">
+                (C) 1984 GUL ZAHID
+            </div>
+<div class="hidden md:flex gap-6 text-on-secondary-fixed-variant">
+<span class="hover:text-secondary transition-colors cursor-default">STATUS: ONLINE</span>
+<span class="hover:text-secondary transition-colors cursor-default">LATENCY: 24MS</span>
+<span class="hover:text-secondary transition-colors cursor-default">V.3.0.1</span>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+</body></html>
